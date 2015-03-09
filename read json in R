@@ -1,0 +1,9 @@
+##First we have to install the JSONLITE package
+library(jsonlite)
+jsondata<-fromJSON("https://api.github.com/users/jtleek/repos")
+##getting the names from the jsondata
+names(jsondata)
+##getting the names of owner
+names(jsondata$owner)
+##getting the names of login 
+jsondata$owner$login
